@@ -1,5 +1,5 @@
 # Uploads the full-quality Temples in r2/ to the Cloudflare R2 bucket "getstill-audio", served at
-# music.getstill.space, then checks that the address answers "play from minute X" requests (needed for ±15 s).
+# audio.getstill.site, then checks that the address answers "play from minute X" requests (needed for ±15 s).
 name: upload-r2
 on:
   workflow_dispatch:
@@ -29,7 +29,7 @@ jobs:
         run: |
           {
             for f in r2/temples/*.mp3; do
-              u="https://music.getstill.space/${f#r2/}"
+              u="https://audio.getstill.site/${f#r2/}"
               echo "== $u"
               curl -sS -o /dev/null -r 1000000-1000099 -H "Origin: https://getstill.space" -D - "$u" \
                 | grep -iE '^(HTTP|content-range|content-length|access-control-allow-origin|cf-cache-status)'
