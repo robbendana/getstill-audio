@@ -1,0 +1,40 @@
+# Uploads the full-quality Temples in r2/ to the Cloudflare R2 bucket "getstill-audio", served at
+# music.getstill.space, then checks that the address answers "play from minute X" requests (needed for ±15 s).
+name: upload-r2
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["r2/**"]
+permissions:
+  contents: write
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: auto
+      AWS_REQUEST_CHECKSUM_CALCULATION: WHEN_REQUIRED
+      AWS_RESPONSE_CHECKSUM_VALIDATION: WHEN_REQUIRED
+      ENDPOINT: https://${{ secrets.R2_ACCOUNT_ID }}.r2.cloudflarestorage.com
+    steps:
+      - uses: actions/checkout@v4
+      - name: Upload
+        run: |
+          aws s3 sync r2/ s3://getstill-audio/ --endpoint-url "$ENDPOINT" \
+            --content-type audio/mpeg --cache-control "public, max-age=31536000, immutable"
+          aws s3 ls s3://getstill-audio/temples/ --endpoint-url "$ENDPOINT"
+      - name: Check the public address
+        run: |
+          {
+            for f in r2/temples/*.mp3; do
+              u="https://music.getstill.space/${f#r2/}"
+              echo "== $u"
+              curl -sS -o /dev/null -r 1000000-1000099 -H "Origin: https://getstill.space" -D - "$u" \
+                | grep -iE '^(HTTP|content-range|content-length|access-control-allow-origin|cf-cache-status)'
+            done
+          } > r2-report.txt 2>&1 || true
+          cat r2-report.txt
+          git config user.name github-actions; git config user.email github-actions@users.noreply.github.com
+          git add r2-report.txt; git commit -m "R2 check report" || true; git push || true
