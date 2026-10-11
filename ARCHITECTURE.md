@@ -13,7 +13,10 @@ Last updated 2026-10-11 (CT).
   `[{"AllowedOrigins":["*"],"AllowedMethods":["GET","HEAD"],"AllowedHeaders":["*"],"ExposeHeaders":["Content-Length","Content-Range","Accept-Ranges","ETag"],"MaxAgeSeconds":86400}]`
 - Cache rule on the getstill.site zone: hostname equals `audio.getstill.site`, eligible for cache, edge TTL 1 month.
 - An R2 billing/usage alert is set in Cloudflare Notifications.
-- Not yet verified: the cache rule and the alert were being set up when this was written, so check them in the dashboard.
+- Verified 2026-10-11 at 1:52 AM CT: a repeat request returns `cf-cache-status: HIT`, and a cross-origin request gets `access-control-allow-origin: *`. The "R2 usage alert" (Usage based billing, R2 Storage, over 5 GB) emails rob@fsyncos.com.
+
+## Player
+- The site repo `robbendana/Stillpoint-backup` (branch `ccr-c993973e-7wozdx`, deploys to getstill.space) has its `site/temples.json` pointing at `https://audio.getstill.site/temples/temple-<name>-192.mp3`. `site/sw.js` lists audio.getstill.site in `AUDIO_HOSTS`, and its caches were bumped (shell-v30, audio-v3). The change is commit 0e2babe.
 
 ## 3. Uploads
 - The GitHub Actions workflow `upload-r2` (`.github/workflows/upload-r2.yml`) syncs `r2/` to the bucket and checks range requests on `audio.getstill.site`. Its results go to `r2-report.txt`.
