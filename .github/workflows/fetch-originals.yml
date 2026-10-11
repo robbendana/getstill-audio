@@ -1,0 +1,28 @@
+# Fetches Kevin MacLeod's original MP3s (CC BY 4.0, incompetech.com) into originals/, unchanged.
+name: fetch originals
+on:
+  push:
+    paths: [".github/workflows/fetch-originals.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download originals
+        run: |
+          mkdir -p originals
+          for n in "Ethereal Relaxation" "That Zen Moment"; do
+            curl -fsSL -o "originals/$n.mp3" "https://incompetech.com/music/royalty-free/mp3-royaltyfree/${n// /%20}.mp3"
+          done
+          ls -la originals
+          sha256sum originals/*.mp3
+      - name: Save them in the repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add originals
+          git commit -m "Kevin MacLeod originals: Ethereal Relaxation, That Zen Moment (CC BY 4.0, unchanged)" || echo "nothing new"
+          git push
