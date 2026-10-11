@@ -1,0 +1,35 @@
+== https://audio.getstill.site/temples/temple-elf-192.mp3
+HTTP/2 206 
+content-length: 100
+content-range: bytes 1000000-1000099/45152482
+cf-cache-status: MISS
+== https://audio.getstill.site/temples/temple-ethereal-192.mp3
+HTTP/2 206 
+content-length: 100
+content-range: bytes 1000000-1000099/33723695
+cf-cache-status: MISS
+== https://audio.getstill.site/temples/temple-fluidscape-192.mp3
+HTTP/2 206 
+content-length: 100
+content-range: bytes 1000000-1000099/43975045
+cf-cache-status: MISS
+== https://audio.getstill.site/temples/temple-garden-192.mp3
+HTTP/2 206 
+content-length: 100
+content-range: bytes 1000000-1000099/48724126
+cf-cache-status: MISS
+== https://audio.getstill.site/temples/temple-new-direction-192.mp3
+HTTP/2 206 
+content-length: 100
+content-range: bytes 1000000-1000099/44641197
+cf-cache-status: MISS
+== https://audio.getstill.site/temples/temple-soaring-192.mp3
+HTTP/2 206 
+content-length: 100
+content-range: bytes 1000000-1000099/44641197
+cf-cache-status: MISS
+== https://audio.getstill.site/temples/temple-zen-192.mp3
+HTTP/2 206 
+content-length: 100
+content-range: bytes 1000000-1000099/42948308
+cf-cache-status: MISS
