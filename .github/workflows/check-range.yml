@@ -1,0 +1,20 @@
+# Checks that the music host answers partial (range) requests, which the player needs to skip 15 s.
+name: check range
+on:
+  push:
+    paths: [".github/workflows/check-range.yml"]
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          for u in https://audio.getstill.space/temples/temple-elf.mp3 https://robbendana.github.io/getstill-audio/cdn/temples/temple-elf.mp3; do
+            echo "== $u" >> range-report.txt
+            curl -sS -o /dev/null -D - -r 1000000-1000099 "$u" | grep -iE "^HTTP|content-range|content-length|accept-ranges|content-type|cache-control" >> range-report.txt
+          done
+          cat range-report.txt
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add range-report.txt && git commit -m "range check report" && git push
