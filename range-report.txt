@@ -1,0 +1,13 @@
+== https://audio.getstill.space/temples/temple-elf.mp3
+HTTP/2 200 
+content-type: audio/mpeg
+content-length: 22230327
+cache-control: public, max-age=31536000, immutable
+x-content-type-options: nosniff
+== https://robbendana.github.io/getstill-audio/cdn/temples/temple-elf.mp3
+HTTP/2 206 
+content-type: audio/mp3
+cache-control: max-age=600
+accept-ranges: bytes
+content-range: bytes 1000000-1000099/22230327
+content-length: 100
