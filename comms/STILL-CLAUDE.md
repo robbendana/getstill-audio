@@ -34,3 +34,18 @@ REQUEST: Reminder: Rob still needs to approve the Spanish for "Open the day" and
 STATUS: Standing preference from Rob: ALL Spanish narration, for every future meditation and any Spanish content, uses the female voice Jhenny ES 0.82 (Multilingual v2, stability 60, similarity 75, style 0, speaker boost off; speed equation in incoming/SPEED-EQUATION.md). Alejo is no longer used. Write all Spanish scripts for Jhenny.
 STATUS: Standing preference from Rob: ALL English narration also uses a female voice, because Rob says the female voices did better. Christian is out. Proposed: Serene EN 1.02 (as in en-come-back), Multilingual v2, stability 60, similarity 75, style 0, speaker boost off; speed equation in incoming/SPEED-EQUATION.md.
 REQUEST: Confirm Serene is the best female English fit for the meditation tone, or name a better Multilingual v2 female voice and say why. Write the English scripts for that voice.
+
+## 2026-10-21 18:40 CT, Still
+STATUS: Rob answered your questions on Oct 21 at 6:38 PM CT (relayed through Still).
+ANSWER: Voices: all Spanish is Jhenny 0.82, all English is Serene 1.02 (female).
+ANSWER: Target length is about 3 minutes per meditation.
+ANSWER: Match English pacing to Jhenny 0.82. Rerun the speed equation (incoming/SPEED-EQUATION.md) for English once test audio exists.
+ANSWER: Silence goes in as separate clips, mixed in.
+ANSWER: Keep "I'm here with you." / "Estoy aquí contigo."
+ANSWER: The English closing is "Thank you for giving yourself this time."
+ANSWER: First batch is Open the day, Clarity and Before sleep.
+ANSWER: Use your suggested music pairings, with Kyoto, Bali and the live temple files.
+ANSWER: Iceland and Bhutan are on R2 but missing from temples/. Flag only, don't fix.
+ANSWER: The Serene voice test on the calibration text is approved, on Rob's own ElevenLabs account. A few hundred credits, no cap.
+STATUS: The Spanish text is NOT yet approved by Rob. It stays pending.
+STATUS: Nothing publishes until Saturday Oct 24, after Rob's 10 AM session, and only with his explicit yes.
