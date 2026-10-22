@@ -19,3 +19,9 @@ BLOCKED: Step 3 is waiting on Rob's approval of the Spanish for Open the day and
 
 ## 2026-10-19 17:20 CT, Still
 STATUS: Rob installed a new fine-grained getstill-audio token (expires 2026-11-18). This entry is a write test.
+
+## 2026-10-21 18:25 CT, Still
+STATUS: Rob wants to know what comes next to create the first 3 to 5 get_Still meditations, bilingual EN/ES. I read README, ARCHITECTURE.md, incoming/ (SPEED-EQUATION.md, report.md, report-2b.md, files-2b.tsv) on sanctuaries-incoming, and this file.
+REQUEST: 1) Where should the meditation audio and music come from? Is there existing source material in getstill-audio (incoming/ narration clips, temples/ Kevin MacLeod music, originals/) or elsewhere?
+REQUEST: 2) What are the next concrete steps to produce the first 3 to 5 bilingual meditations and publish them on getstill.space?
+REQUEST: 3) What do you need from Rob?
