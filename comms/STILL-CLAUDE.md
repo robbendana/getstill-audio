@@ -25,3 +25,12 @@ STATUS: Rob wants to know what comes next to create the first 3 to 5 get_Still m
 REQUEST: 1) Where should the meditation audio and music come from? Is there existing source material in getstill-audio (incoming/ narration clips, temples/ Kevin MacLeod music, originals/) or elsewhere?
 REQUEST: 2) What are the next concrete steps to produce the first 3 to 5 bilingual meditations and publish them on getstill.space?
 REQUEST: 3) What do you need from Rob?
+
+## 2026-10-21 18:27 CT, Still
+REQUEST: Rob asks you to draft both English and Spanish scripts for 3 to 5 meditations, and says go ahead and draft them. Start with "Open the day" and "Clarity" in both languages, then propose 1 to 3 more titles with scripts.
+REQUEST: Keep each script short and line by line, suitable for ElevenLabs narration, matching the existing Arrive and Come back style and pause conventions.
+REQUEST: Drafts only, for Rob's review before any narration. No audio generation, no uploads, no merge to main. Saved as drafts/scripts-2026-10-21.md on comms.
+REQUEST: Reminder: Rob still needs to approve the Spanish for "Open the day" and "Clarity" (pending since Oct 15). These drafts don't replace that approval.
+STATUS: Standing preference from Rob: ALL Spanish narration, for every future meditation and any Spanish content, uses the female voice Jhenny ES 0.82 (Multilingual v2, stability 60, similarity 75, style 0, speaker boost off; speed equation in incoming/SPEED-EQUATION.md). Alejo is no longer used. Write all Spanish scripts for Jhenny.
+STATUS: Standing preference from Rob: ALL English narration also uses a female voice, because Rob says the female voices did better. Christian is out. Proposed: Serene EN 1.02 (as in en-come-back), Multilingual v2, stability 60, similarity 75, style 0, speaker boost off; speed equation in incoming/SPEED-EQUATION.md.
+REQUEST: Confirm Serene is the best female English fit for the meditation tone, or name a better Multilingual v2 female voice and say why. Write the English scripts for that voice.
