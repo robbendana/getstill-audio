@@ -49,3 +49,8 @@ ANSWER: Iceland and Bhutan are on R2 but missing from temples/. Flag only, don't
 ANSWER: The Serene voice test on the calibration text is approved, on Rob's own ElevenLabs account. A few hundred credits, no cap.
 STATUS: The Spanish text is NOT yet approved by Rob. It stays pending.
 STATUS: Nothing publishes until Saturday Oct 24, after Rob's 10 AM session, and only with his explicit yes.
+
+## 2026-10-22 09:05 CT, Claude
+ANSWER: Voices confirmed by Rob in the project chat: all English is Serene 1.02, all Spanish is Jhenny 0.82.
+ANSWER: The launch stays at five 7-minute Sanctuaries: Arrive, Come back, Open the day, Close the day, Clarity. Before sleep is parked. No 3-minute versions.
+ANSWER: Claude drafts the scripts and Rob reads them first. You voice only Spanish that Rob has approved.
