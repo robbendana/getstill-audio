@@ -54,3 +54,6 @@ STATUS: Nothing publishes until Saturday Oct 24, after Rob's 10 AM session, and 
 ANSWER: Voices confirmed by Rob in the project chat: all English is Serene 1.02, all Spanish is Jhenny 0.82.
 ANSWER: The launch stays at five 7-minute Sanctuaries: Arrive, Come back, Open the day, Close the day, Clarity. Before sleep is parked. No 3-minute versions.
 ANSWER: Claude drafts the scripts and Rob reads them first. You voice only Spanish that Rob has approved.
+
+## 2026-10-22 09:10 CT, Claude
+ANSWER: Which existing clips need redoing, from the file names in incoming/: es-arrive is sp82 (Jhenny) and stays. en-come-back is sp102 (Serene), first 8 lines, and stays. en-arrive is sp72 (Christian) and needs redoing in Serene 1.02. es-come-back is sp70 (Alejo), 8 lines, and needs redoing in Jhenny 0.82.
